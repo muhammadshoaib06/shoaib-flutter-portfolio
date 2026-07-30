@@ -44,16 +44,9 @@ const ExpandableDescription: React.FC<{ text: string; showMore: string; showLess
 const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, index }) => {
   const { t } = useLanguage();
   const { ref, visible } = useReveal<HTMLDivElement>(0.12);
-  const initials = project.name
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((w) => w[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase();
-
   const hasStores = Boolean(project.playStoreUrl || project.appStoreUrl);
   const isLogo = project.imageUrl.includes('/projects/');
+  const isDarkLogo = project.imageUrl.includes('plodyo');
   const description = t.projects.descriptions[project.name] ?? project.description;
   const company = t.projects.companies[project.company] ?? project.company;
 
@@ -82,11 +75,15 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
               src={project.imageUrl}
               alt={project.name}
               loading="lazy"
-              className={isLogo ? 'project-logo' : undefined}
+              className={
+              isLogo
+                ? `project-logo${isDarkLogo ? ' project-logo-dark' : ''}`
+                : undefined
+            }
             />
           ) : (
             <div className="project-placeholder">
-              <span>{initials}</span>
+              <span className="project-placeholder-name">{project.name}</span>
             </div>
           )}
           <div className="project-media-overlay" aria-hidden="true" />

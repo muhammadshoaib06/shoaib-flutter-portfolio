@@ -192,6 +192,15 @@ export const portfolioData: PortfolioData = {
       imageUrl: ""
     },
     {
+      name: "Plodyo",
+      company: "Outsourcing Projects",
+      description:
+        "Plodyo is an AI storytelling app for kids that helps parents, educators, and organizations create personalized children’s stories with text, illustrations, audiobooks, and video across many languages. Built with Flutter and Supabase, it includes role-based signup (parent / educator / organization), story and video generation, library browsing, subscriptions, and push notifications for long-running content jobs.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.app.plodyo",
+      appStoreUrl: "https://apps.apple.com/us/app/plodyo/id6762214383",
+      imageUrl: `${import.meta.env.BASE_URL}projects/plodyo.png`
+    },
+    {
       name: "Invogen",
       company: "JMM Technologies",
       description:
