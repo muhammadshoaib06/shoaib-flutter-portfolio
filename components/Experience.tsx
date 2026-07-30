@@ -1,27 +1,57 @@
 import React from 'react';
-import type { ExperienceItem } from '../types';
 import Section from './Section';
+import { useReveal } from '../hooks/useReveal';
+import { useLanguage } from '../contexts/LanguageContext';
 
-interface ExperienceProps {
-  experience: ExperienceItem[];
-}
+const ExperienceCard: React.FC<{
+  role: string;
+  company: string;
+  period: string;
+  description: string[];
+  index: number;
+}> = ({ role, company, period, description, index }) => {
+  const { ref, visible } = useReveal<HTMLDivElement>();
 
-const Experience: React.FC<ExperienceProps> = ({ experience }) => {
   return (
-    <Section title="Professional Experience" id="experience">
-      <div className="relative border-l-2 border-accent/30 pl-8 space-y-12">
-        {experience.map((job, index) => (
-          <div key={index} className="relative">
-            <div className="absolute -left-[42px] top-1 w-4 h-4 bg-accent rounded-full border-4 border-light dark:border-dark"></div>
-            <p className="text-sm font-semibold text-accent/80 mb-1">{job.period}</p>
-            <h3 className="text-2xl font-bold text-text-dark dark:text-white">{job.role}</h3>
-            <p className="text-lg font-medium text-gray-500 dark:text-gray-400 mb-4">{job.company}</p>
-            <ul className="space-y-2 list-disc list-inside text-gray-600 dark:text-gray-300">
-              {job.description.map((point, pointIndex) => (
-                <li key={pointIndex}>{point}</li>
-              ))}
-            </ul>
-          </div>
+    <div
+      ref={ref}
+      className={`reveal ${visible ? 'visible' : ''} relative`}
+      style={{ transitionDelay: `${index * 80}ms` }}
+    >
+      <div className="experience-dot absolute -start-[29px] sm:-start-[41px] top-2 w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-[image:var(--gradient-brand)] ring-4 ring-[var(--bg)]" />
+      <div className="panel p-4 sm:p-7 transition-transform duration-300 hover:-translate-y-1">
+        <p className="text-xs sm:text-sm font-bold tracking-wide text-[var(--accent)] mb-2">{period}</p>
+        <h3 className="font-display text-lg sm:text-2xl font-bold text-[var(--text)] leading-snug">{role}</h3>
+        <p className="mt-1 text-sm sm:text-base font-medium text-[var(--text-muted)] mb-3 sm:mb-4">{company}</p>
+        <ul className="space-y-2 sm:space-y-2.5">
+          {description.map((point) => (
+            <li key={point} className="flex gap-2.5 sm:gap-3 text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--accent)] flex-shrink-0" />
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const Experience: React.FC = () => {
+  const { t } = useLanguage();
+
+  return (
+    <Section title={t.experience.title} id="experience" subtitle={t.experience.subtitle}>
+      <div className="relative border-s-2 border-[var(--line)] ps-5 sm:ps-8 space-y-6 sm:space-y-8">
+        <div className="absolute start-0 top-0 bottom-0 w-0.5 timeline-line opacity-70" />
+        {t.experience.jobs.map((job, index) => (
+          <ExperienceCard
+            key={`${job.company}-${job.period}`}
+            role={job.role}
+            company={job.company}
+            period={job.period}
+            description={job.description}
+            index={index}
+          />
         ))}
       </div>
     </Section>

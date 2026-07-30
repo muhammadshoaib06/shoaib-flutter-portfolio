@@ -30,8 +30,11 @@ export interface ExperienceItem {
 export interface Project {
   name: string;
   description: string;
-  link: string | null;
+  company: string;
   imageUrl: string;
+  playStoreUrl?: string | null;
+  appStoreUrl?: string | null;
+  availability?: string | null;
 }
 
 export interface Education {

@@ -3,42 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Shoaib | Flutter Developer</title>
+    <meta name="description" content="Portfolio of Muhammad Shoaib — Senior Flutter Developer with 5 years of experience building production mobile apps for international clients." />
+    <title>Muhammad Shoaib | Senior Flutter Developer</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="theme-color" content="#0B1F33" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: 'class', // Enable class-based dark mode
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              'primary': '#02569B',
-              'secondary': '#0175C2',
-              'accent': '#039BE5',
-              'light': '#F0F9FF', // Light mode primary background
-              'dark': '#121212', // Dark mode primary background
-              'dark-secondary': '#1E1E1E', // Dark mode secondary background
-              'text-dark': '#0D1B2A', // For text in light mode
+              primary: '#046a9e',
+              secondary: '#0a8ec9',
+              accent: '#0a8ec9',
+              light: '#f4f8fb',
+              dark: '#071018',
+              'dark-secondary': '#0d1a26',
+              'text-dark': '#0b1f33',
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Manrope', 'sans-serif'],
+              display: ['Sora', 'sans-serif'],
+              name: ['Fraunces', 'serif'],
             },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-            },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-            }
-          }
-        }
-      }
+          },
+        },
+      };
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <script type="importmap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
@@ -47,10 +46,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-light dark:bg-dark text-text-dark dark:text-gray-200 font-sans transition-colors duration-300">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

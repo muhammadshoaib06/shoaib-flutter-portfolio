@@ -1,34 +1,58 @@
 import React from 'react';
 import type { PersonalInfo } from '../types';
 import { Github, Linkedin, Instagram } from './Icons';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface FooterProps {
   personalInfo: PersonalInfo;
 }
 
 const Footer: React.FC<FooterProps> = ({ personalInfo }) => {
+  const { t } = useLanguage();
   const { socials } = personalInfo;
 
   return (
-    <footer className="bg-gray-100 dark:bg-dark-secondary mt-20 py-8">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 dark:text-gray-400">
-        <div className="flex justify-center gap-6 mb-4">
-          <a href={socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors">
-            <Github className="w-6 h-6" />
+    <footer className="mt-20 border-t border-[var(--line)] py-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[var(--text-muted)]">
+        <div className="flex justify-center gap-5 mb-5">
+          <a
+            href={socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2.5 rounded-xl border border-[var(--line)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+            aria-label="GitHub"
+          >
+            <Github className="w-5 h-5" />
           </a>
-          <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors">
-            <Linkedin className="w-6 h-6" />
+          <a
+            href={socials.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2.5 rounded-xl border border-[var(--line)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-5 h-5" />
           </a>
-          <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-accent transition-colors">
-            <Instagram className="w-6 h-6" />
+          <a
+            href={socials.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2.5 rounded-xl border border-[var(--line)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-5 h-5" />
           </a>
         </div>
-        <p className="mb-2">
-          <a href={`mailto:${personalInfo.email}`} className="hover:text-text-dark dark:hover:text-white transition-colors">{personalInfo.email}</a>
-          <span className="mx-2">|</span>
+        <p className="mb-2 text-sm">
+          <a href={`mailto:${personalInfo.email}`} className="hover:text-[var(--accent)] transition-colors">
+            {personalInfo.email}
+          </a>
+          <span className="mx-2 opacity-40">·</span>
           <span>{personalInfo.phone}</span>
         </p>
-        <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All Rights Reserved.</p>
+        <p className="text-sm">
+          © {new Date().getFullYear()} {personalInfo.name}. {t.footer.rights}
+        </p>
       </div>
     </footer>
   );
