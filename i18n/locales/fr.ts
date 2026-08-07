@@ -10,7 +10,7 @@ export const fr: Translations = {
   },
   header: {
     available: 'Disponible pour des contrats à distance',
-    title: 'Développeur Flutter Senior',
+    title: 'Développeur d’applications mobiles | Développeur Flutter Senior',
     tagline:
       'Livraison d’applications Flutter en production de bout en bout — Clean Architecture, systèmes offline-first et publications prêtes pour les stores pour des équipes au Royaume-Uni, dans l’UE et au Moyen-Orient.',
     downloadCv: 'Télécharger le CV',

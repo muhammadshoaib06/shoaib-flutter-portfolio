@@ -21,10 +21,12 @@ const ExpandableDescription: React.FC<{ text: string; showMore: string; showLess
   const preview = needsToggle ? `${text.slice(0, PREVIEW_LENGTH).trimEnd()}…` : text;
 
   return (
-    <div className="project-desc">
-      <p className={`project-desc-text ${expanded ? 'is-expanded' : ''}`}>
-        {expanded || !needsToggle ? text : preview}
-      </p>
+    <div className={`project-desc ${expanded ? 'is-expanded' : ''}`}>
+      <div className="project-desc-box">
+        <p className="project-desc-text">
+          {expanded || !needsToggle ? text : preview}
+        </p>
+      </div>
       {needsToggle && (
         <button
           type="button"

@@ -23,14 +23,16 @@ const ExperienceCard: React.FC<{
         <p className="text-xs sm:text-sm font-bold tracking-wide text-[var(--accent)] mb-2">{period}</p>
         <h3 className="font-display text-lg sm:text-2xl font-bold text-[var(--text)] leading-snug">{role}</h3>
         <p className="mt-1 text-sm sm:text-base font-medium text-[var(--text-muted)] mb-3 sm:mb-4">{company}</p>
-        <ul className="space-y-2 sm:space-y-2.5">
-          {description.map((point) => (
-            <li key={point} className="flex gap-2.5 sm:gap-3 text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
-              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--accent)] flex-shrink-0" />
-              <span>{point}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="experience-desc-box">
+          <ul className="space-y-2 sm:space-y-2.5">
+            {description.map((point) => (
+              <li key={point} className="flex gap-2.5 sm:gap-3 text-sm sm:text-base text-[var(--text)] leading-relaxed">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--accent)] flex-shrink-0" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

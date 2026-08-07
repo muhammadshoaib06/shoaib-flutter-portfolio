@@ -10,7 +10,7 @@ export const ar: Translations = {
   },
   header: {
     available: 'متاح لعقود العمل عن بُعد',
-    title: 'مطور Flutter أول',
+    title: 'مطور تطبيقات الجوال | مطور Flutter أول',
     tagline:
       'تسليم تطبيقات Flutter الإنتاجية من البداية للنهاية — Clean Architecture، وأنظمة offline-first، وإصدارات جاهزة للمتاجر لفرق في المملكة المتحدة والاتحاد الأوروبي والشرق الأوسط.',
     downloadCv: 'تحميل السيرة الذاتية',

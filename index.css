@@ -1019,13 +1019,62 @@ html.dark .project-media img.project-logo-dark {
 .project-desc {
   flex: 1;
   margin-bottom: 1rem;
+  min-width: 0;
+}
+
+.summary-box {
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 1.15rem 1.25rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.experience-desc-box {
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--accent-soft);
+  padding: 0.9rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .summary-box {
+    padding: 1.4rem 1.6rem;
+  }
+
+  .experience-desc-box {
+    padding: 1.05rem 1.15rem;
+  }
+}
+
+.project-desc-box {
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--accent-soft);
+  padding: 0.85rem 0.95rem;
+  min-height: 5.75rem;
+  max-height: 5.75rem;
+  overflow: hidden;
+  transition: max-height 0.35s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.project-desc.is-expanded .project-desc-box {
+  max-height: 16rem;
+  overflow-y: auto;
+  border-color: rgba(10, 142, 201, 0.35);
+  background: var(--surface);
+  -webkit-overflow-scrolling: touch;
 }
 
 .project-desc-text {
   margin: 0;
-  color: var(--text-muted);
+  color: var(--text);
   font-size: 0.9rem;
   line-height: 1.65;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .project-more-btn {

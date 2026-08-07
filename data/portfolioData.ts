@@ -13,7 +13,7 @@ interface PortfolioData {
 export const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Muhammad Shoaib",
-    title: "Senior Flutter Developer",
+    title: "Mobile App Developer | Senior Flutter Developer",
     email: "ms09390080@gmail.com",
     phone: "+92 341 939 0080",
     location: "Dir, Khyber Pakhtunkhwa, Pakistan",

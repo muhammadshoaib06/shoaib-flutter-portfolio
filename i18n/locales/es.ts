@@ -10,7 +10,7 @@ export const es: Translations = {
   },
   header: {
     available: 'Disponible para contratos remotos',
-    title: 'Desarrollador Flutter Senior',
+    title: 'Desarrollador de apps móviles | Desarrollador Flutter Senior',
     tagline:
       'Entrega de apps Flutter en producción de extremo a extremo — Clean Architecture, sistemas offline-first y lanzamientos listos para las tiendas para equipos en el Reino Unido, la UE y Oriente Medio.',
     downloadCv: 'Descargar CV',

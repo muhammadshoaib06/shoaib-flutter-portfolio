@@ -16,9 +16,11 @@ const About: React.FC = () => {
   return (
     <Section title={t.about.title} id="about" subtitle={t.about.subtitle}>
       <div ref={ref} className={`reveal ${visible ? 'visible' : ''} space-y-8 sm:space-y-10`}>
-        <p className="text-[var(--text-muted)] text-base sm:text-lg leading-relaxed text-justify hyphens-auto max-w-5xl">
-          {t.about.summary}
-        </p>
+        <div className="summary-box max-w-5xl">
+          <p className="text-[var(--text)] text-base sm:text-lg leading-relaxed text-justify hyphens-auto">
+            {t.about.summary}
+          </p>
+        </div>
 
         <div className="grid grid-cols-3 gap-2.5 sm:gap-5 max-w-4xl">
           {highlights.map((item) => (

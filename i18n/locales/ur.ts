@@ -10,7 +10,7 @@ export const ur: Translations = {
   },
   header: {
     available: 'ریموٹ کنٹریکٹس کے لیے دستیاب',
-    title: 'سینئر Flutter ڈیولپر',
+    title: 'موبائل ایپ ڈیولپر | سینئر Flutter ڈیولپر',
     tagline:
       'پروڈکشن Flutter ایپس اینڈ ٹو اینڈ — Clean Architecture، آف لائن فرسٹ سسٹمز، اور UK، EU اور مشرقِ وسطیٰ کی ٹیموں کے لیے اسٹور ریڈی ریلیزز۔',
     downloadCv: 'CV ڈاؤن لوڈ کریں',

@@ -10,7 +10,7 @@ export const zh: Translations = {
   },
   header: {
     available: '可接远程合同项目',
-    title: '高级 Flutter 开发工程师',
+    title: '移动应用开发者 | 高级 Flutter 开发工程师',
     tagline:
       '端到端交付生产级 Flutter 应用 — Clean Architecture、离线优先系统，以及面向英国、欧盟与中东团队的商店就绪发布。',
     downloadCv: '下载简历',
