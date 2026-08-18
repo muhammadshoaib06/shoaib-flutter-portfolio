@@ -107,6 +107,7 @@ export const de: Translations = {
     availableStores: 'Verfügbar im Play Store & App Store',
     companies: {
       CloudLaunch: 'CloudLaunch',
+      'Bridge Softwares': 'Bridge Softwares',
       'JMM Technologies': 'JMM Technologies',
       'Outsourcing Projects': 'Outsourcing-Projekte',
     },
@@ -123,14 +124,18 @@ export const de: Translations = {
         'Fly-ME ist eine Flugticket-Buchungs-App, die Suche, Reservierung und Zahlung für Reisende vereinfacht. Nutzer können Flugoptionen erkunden, Echtzeit-Verfügbarkeit prüfen und Buchungen über einen sicheren Checkout-Flow abschließen. Das Produkt betont eine klare Buchungsreise — von der Routenfindung bis zur Bestätigung — mit Fokus auf Usability und Zuverlässigkeit. Es wurde für ein modernes Reiseerlebnis gebaut, bei dem Geschwindigkeit, Klarheit und Vertrauen in jedem Schritt zählen.',
       'FastDrop – eCommerce Shopping':
         'FastDrop ist eine grenzüberschreitende E-Commerce-Shopping-App, die internationale Stores wie Shein, Amazon, AliExpress, Temu und Alibaba in einer praktischen Plattform vereint. Käufer können Kataloge durchstöbern, Warenkörbe verwalten, Bestellungen in Echtzeit verfolgen und den Checkout über sichere Zahlungsoptionen abschließen. Die App übernimmt internationale Logistik und Last-Mile-Delivery, damit Kunden weltweit einkaufen können, ohne zwischen mehreren Shops zu wechseln. Gebaut für ein reibungsloses Shopping-Erlebnis — von Entdeckung und Checkout bis zu Liefer-Updates.',
-      'Islam Simplified':
-        'Islam Simplified ist eine bildungsorientierte Lern-App für alle, die neugierig auf den Islam sind — einschließlich Anfänger und Nichtmuslime, die den Glauben erkunden. Sie bietet gut strukturierte Artikel, Lehrvideos, eine vollständige Quran-Übersetzung, einen FAQ-Bereich und ein Glossar wichtiger islamischer Begriffe. Lernende können Inhalte im eigenen Tempo verfolgen, Favoriten speichern und personalisierte Empfehlungen nach Interessen erhalten. Die App bündelt wesentliche Lernressourcen in einer klaren, modernen Oberfläche, die das Verständnis des Islam zugänglicher macht.',
+      'Islam Simplified: Learn & Grow':
+        'Islam Simplified: Learn & Grow ist eine bildungsorientierte Lern-App für alle, die neugierig auf den Islam sind — einschließlich Anfänger und Nichtmuslime, die den Glauben erkunden. Sie bietet gut strukturierte Artikel, Lehrvideos, eine vollständige Quran-Übersetzung, einen FAQ-Bereich und ein Glossar wichtiger islamischer Begriffe. Lernende können Inhalte im eigenen Tempo verfolgen, Favoriten speichern und personalisierte Empfehlungen nach Interessen erhalten. Die App bündelt wesentliche Lernressourcen in einer klaren, modernen Oberfläche, die das Verständnis des Islam zugänglicher macht.',
       'Path to Arabic: Learn Arabic':
         'Path to Arabic ist eine strukturierte Arabisch-Lernplattform, die Nutzern Sprachkompetenzen für Alltagskommunikation und Quran-Verständnis aufbaut. Sie kombiniert geführte Lektionen, Video-Tutorials, gamifizierte Übungen, Quizzes und Fortschritts-Tracking in einem progressiven Lernpfad. Die App unterstützt Grundlagen des Modern Standard Arabic und praxisnahe Engagement-Tools, die das Behalten motivierender machen. Mit geräteübergreifender Fortschritts-Sync und klarem Curriculum bietet sie eine vollständige Mobile-Learning-Experience für Anfänger und Fortgeschrittene.',
       'Miswarak Consumer App':
         'Miswarak Consumer ist eine lieferorientierte Mobile-App, die Kunden hilft, Bestellungen aufzugeben, Lieferungen zu verwalten und den Fortschritt mit mehr Sicherheit zu verfolgen. Sie vereinfacht die Consumer-Journey rund um Auftragserstellung, Status-Sichtbarkeit und Liefer-Tracking, damit Nutzer immer wissen, wo Dinge stehen. Die Experience ist auf Zuverlässigkeit und Klarheit ausgelegt — und reduziert Reibung zwischen Browsen, Bestellen und Empfangen. Sie unterstützt eine reibungslosere Customer Experience für On-Demand-Liefer-Workflows in der Produktion.',
+      'Find My Filmmaker':
+        'Find My Filmmaker verbindet Auftraggeber weltweit mit Filmemachern — Regisseure, Editoren, Kameraleute und mehr. Filmemacher präsentieren Portfolios und werden entdeckt; Kunden durchsuchen verifizierte Talente, filtern nach Standort und Rolle und arbeiten per Echtzeit-Messaging zusammen. Nahtloser Wechsel zwischen Filmemacher- und Kundenmodus in einem Konto.',
       'Luna Little Bedtime Stories':
         'Luna Little Bedtime Stories ist eine kindgerechte Storytelling-App, die das abendliche Vorlesen ruhig, ansprechend und einfach für Familien macht. Sie bietet erzählte Gute-Nacht-Geschichten in einer sanften, altersgerechten Experience, die Kindern hilft, vor dem Schlafen herunterzukommen. Das Design priorisiert Einfachheit, Wärme und angenehme Erzählmomente für junge Zuhörer. Für Kinder und Eltern gebaut, macht sie die Schlafenszeit zu einer beständigeren und angenehmeren gemeinsamen Routine.',
+      'Home Interior Exterior Design':
+        'Home Design AI transformiert Innenräume, Außenbereiche, Küchen und Gärten mit KI-Design-Tools. Wählen Sie aus 70+ Stilen und 30+ Raumtypen, planen Sie Layouts, wandeln Sie Skizzen in Renderings um und speichern oder teilen Sie Designs — für Hausbesitzer, Designer und DIY-Enthusiasten.',
       Plodyo:
         'Plodyo ist eine KI-Storytelling-App für Kinder, mit der Eltern, Pädagogen und Organisationen personalisierte Kindergeschichten mit Text, Illustrationen, Hörbüchern und Video in vielen Sprachen erstellen können. Entwickelt mit Flutter und Supabase, umfasst sie rollenbasierten Signup (Eltern / Pädagoge / Organisation), Story- und Videogenerierung, Bibliothek, Abonnements und Push-Benachrichtigungen für länger laufende Content-Jobs.',
       Invogen:

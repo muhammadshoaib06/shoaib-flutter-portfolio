@@ -94,19 +94,15 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
         </div>
 
         <div className="order-1 lg:order-2 animate-hero animate-hero-delay-3 relative flex justify-center lg:justify-end">
-          <div className="absolute top-6 sm:top-8 w-56 h-56 sm:w-96 sm:h-96 rounded-full bg-[var(--hero-glow-1)] blur-3xl pulse-soft" />
-          <div className="relative float-y profile-frame">
+          <div className="absolute top-6 sm:top-8 w-64 h-64 sm:w-[28rem] sm:h-[28rem] rounded-full bg-[var(--hero-glow-1)] blur-3xl opacity-80" />
+          <div className="relative profile-frame">
             <div className="avatar-ring avatar-ring-lg">
-              <div className="avatar-glow" />
               <img
                 src={personalInfo.imageUrl}
                 alt={personalInfo.name}
                 className="profile-photo w-44 h-44 sm:w-72 sm:h-72 lg:w-[22rem] lg:h-[22rem] rounded-full object-cover"
               />
             </div>
-            <span className="avatar-dot avatar-dot-1" />
-            <span className="avatar-dot avatar-dot-2" />
-            <span className="avatar-dot avatar-dot-3" />
             <div className="profile-badge absolute -bottom-1 sm:bottom-3 left-1/2 -translate-x-1/2 z-20 whitespace-nowrap px-3 sm:px-5 py-2 sm:py-2.5 rounded-full panel text-[0.65rem] sm:text-sm font-bold tracking-wide text-[var(--accent)] shadow-lg">
               {t.header.badge}
             </div>

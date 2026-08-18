@@ -155,16 +155,17 @@ export const portfolioData: PortfolioData = {
       description:
         "FastDrop is a cross-border e-commerce shopping app that brings international stores such as Shein, Amazon, AliExpress, Temu, and Alibaba into one convenient platform. Shoppers can browse catalogues, manage carts, track orders in real time, and complete checkout through secure payment options. The app handles international logistics and last-mile delivery so customers can shop globally without juggling multiple storefronts. It is built for a smooth shopping experience — from discovery and checkout through to delivery updates.",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.fastdrop.app&hl=en",
-      imageUrl: ""
+      appStoreUrl: "https://apps.apple.com/pk/app/fastdrop-ecommerce-shopping/id6752128823",
+      imageUrl: `${import.meta.env.BASE_URL}projects/fastdrop.png`
     },
     {
-      name: "Islam Simplified",
+      name: "Islam Simplified: Learn & Grow",
       company: "CloudLaunch",
       description:
-        "Islam Simplified is an education-focused learning app designed for anyone curious about Islam, including beginners and non-Muslims exploring the faith. It offers well-structured articles, educational videos, a full Quran translation experience, an FAQ section, and a glossary of key Islamic terms. Learners can follow content at their own pace, save favorites, and receive personalized recommendations based on their interests. The app brings essential learning resources together in a clear, modern interface that makes understanding Islam more approachable.",
+        "Islam Simplified: Learn & Grow is an education-focused learning app designed for anyone curious about Islam, including beginners and non-Muslims exploring the faith. It offers well-structured articles, educational videos, a full Quran translation experience, an FAQ section, and a glossary of key Islamic terms. Learners can follow content at their own pace, save favorites, and receive personalized recommendations based on their interests. The app brings essential learning resources together in a clear, modern interface that makes understanding Islam more approachable.",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.aburuqayyah.salah.SalahWidget&hl=en",
       appStoreUrl: "https://apps.apple.com/us/app/islam-simplified/id6751723151",
-      imageUrl: ""
+      imageUrl: `${import.meta.env.BASE_URL}projects/islam-simplified.png`
     },
     {
       name: "Path to Arabic: Learn Arabic",
@@ -183,13 +184,30 @@ export const portfolioData: PortfolioData = {
       imageUrl: "https://i.ibb.co/cSJ93fys/SCR-20251028-lged.png"
     },
     {
-      name: "Luna Little Bedtime Stories",
+      name: "Find My Filmmaker",
       company: "CloudLaunch",
+      description:
+        "Find My Filmmaker connects clients with filmmakers worldwide — directors, editors, cinematographers, and more. Filmmakers showcase portfolios and get discovered; clients browse verified talent, filter by location and role, and collaborate via real-time messaging. Switch seamlessly between filmmaker and client modes from one account.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.fmfexpo.findmyfilmmaker&hl=en",
+      appStoreUrl: "https://apps.apple.com/pk/app/find-my-filmmaker/id6752275597",
+      imageUrl: `${import.meta.env.BASE_URL}projects/find-my-filmmaker.png`
+    },
+    {
+      name: "Home Interior Exterior Design",
+      company: "Bridge Softwares",
+      description:
+        "Home Design AI transforms interiors, exteriors, kitchens, and gardens with AI-powered design tools. Choose from 70+ styles across 30+ room types, plan layouts, convert sketches to renders, and save or share designs — built for homeowners, designers, and DIY enthusiasts.",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.home.design.ai.decor",
+      imageUrl: `${import.meta.env.BASE_URL}projects/home-design-ai.png`
+    },
+    {
+      name: "Luna Little Bedtime Stories",
+      company: "Bridge Softwares",
       description:
         "Luna Little Bedtime Stories is a child-friendly storytelling app created to make nighttime reading calm, engaging, and easy for families. It offers narrated bedtime tales in a gentle, age-appropriate experience that helps children wind down before sleep. The design prioritizes simplicity, warmth, and delightful storytelling moments for young listeners. Built for kids and parents alike, it turns bedtime into a more consistent and enjoyable shared routine.",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.kid.story.generator&hl=en",
       appStoreUrl: "https://apps.apple.com/us/app/luna-little-bedtime-stories/id6471000539",
-      imageUrl: ""
+      imageUrl: `${import.meta.env.BASE_URL}projects/luna-little.png`
     },
     {
       name: "Plodyo",
@@ -213,8 +231,9 @@ export const portfolioData: PortfolioData = {
       company: "JMM Technologies",
       description:
         "Hijria is an Islamic lifestyle app that brings everyday faith tools into one thoughtful mobile experience. Core features include a Qibla finder, Azaan notifications, a digital Tasbeeh, Hijri calendar support, and event reminders. The app is designed to help users stay consistent with prayer and spiritual routines while keeping the interface simple and accessible. It combines practical utility with a calm, purpose-driven user experience for daily Islamic practice.",
-      availability: "Available on Play Store & App Store",
-      imageUrl: ""
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.jmmtechnologies.hijricalendar&hl=en",
+      appStoreUrl: "https://apps.apple.com/pk/app/hijria/id1623978880",
+      imageUrl: `${import.meta.env.BASE_URL}projects/hijria.png`
     },
     {
       name: "DirtX",
@@ -237,7 +256,8 @@ export const portfolioData: PortfolioData = {
     {
       degree: "Bachelor of Software Engineering",
       university: "COMSATS University, Abbottabad, Pakistan",
-      year: ""
+      year: "2021",
+      imageUrl: `${import.meta.env.BASE_URL}education/degree.png`
     }
   ],
   languages: [

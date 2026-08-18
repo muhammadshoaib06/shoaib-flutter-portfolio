@@ -49,6 +49,9 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
   const hasStores = Boolean(project.playStoreUrl || project.appStoreUrl);
   const isLogo = project.imageUrl.includes('/projects/');
   const isDarkLogo = project.imageUrl.includes('plodyo');
+  const isRoundedLogo = ['fastdrop', 'islam-simplified', 'find-my-filmmaker'].some((slug) =>
+    project.imageUrl.includes(slug)
+  );
   const description = t.projects.descriptions[project.name] ?? project.description;
   const company = t.projects.companies[project.company] ?? project.company;
 
@@ -73,16 +76,27 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
       <div className="project-card-inner">
         <div className="project-media">
           {project.imageUrl ? (
-            <img
-              src={project.imageUrl}
-              alt={project.name}
-              loading="lazy"
-              className={
-              isLogo
-                ? `project-logo${isDarkLogo ? ' project-logo-dark' : ''}`
-                : undefined
-            }
-            />
+            isRoundedLogo ? (
+              <div className="project-logo-shell">
+                <img
+                  src={project.imageUrl}
+                  alt={project.name}
+                  loading="lazy"
+                  className="project-logo project-logo-rounded"
+                />
+              </div>
+            ) : (
+              <img
+                src={project.imageUrl}
+                alt={project.name}
+                loading="lazy"
+                className={
+                  isLogo
+                    ? `project-logo${isDarkLogo ? ' project-logo-dark' : ''}`
+                    : undefined
+                }
+              />
+            )
           ) : (
             <div className="project-placeholder">
               <span className="project-placeholder-name">{project.name}</span>

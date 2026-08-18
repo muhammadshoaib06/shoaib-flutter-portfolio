@@ -41,6 +41,7 @@ export interface Education {
   degree: string;
   university: string;
   year: string;
+  imageUrl?: string;
 }
 
 export interface Language {

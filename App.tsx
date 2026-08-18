@@ -20,6 +20,8 @@ const App: React.FC = () => {
         <span className="orb orb-2" />
         <span className="orb orb-3" />
         <span className="orb orb-4" />
+        <span className="orb orb-5" />
+        <span className="orb orb-6" />
         <span className="particle particle-1" />
         <span className="particle particle-2" />
         <span className="particle particle-3" />
